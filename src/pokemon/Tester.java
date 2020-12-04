@@ -7,6 +7,11 @@ public class Tester {
 		System.out.println(shelley.getHealth());
 		System.out.println(shelley.getName());
 		System.out.println(shelley.getType());
+		
+		Pokemon pikachu = new Pokemon("pikachu", 23, "mouse");
+		Pokemon balley = new Pokemon("balley", 12, "seal");
+		Pokemon whopper = new Pokemon("whopper", 56, "giraffe");
+	
 	}
 
 }
