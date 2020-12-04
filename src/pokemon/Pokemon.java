@@ -1,6 +1,6 @@
 package pokemon;
 
-public class Pokemon {
+public class Pokemon implements PokemonInterface {
 	//member variables
 	private String name;
 	private int health;
@@ -47,6 +47,11 @@ public class Pokemon {
 	public void attackPokemon(Pokemon pokemon) {
 		pokemon.health -= 10;
 	}
+	
+	//these are from the interface
+	Pokemon createPokemon(String name, int health, String type);//This method creates and returns Pokemon.
+	String pokemonInfo(Pokemon pokemon);//This method returns a String with the name, health, and type of the pokemon.
+	void listPokemon();//List all the pokemon names that you have in your pokedex.
 	
 	
 	
