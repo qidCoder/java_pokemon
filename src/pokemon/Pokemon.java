@@ -1,7 +1,5 @@
 package pokemon;
 
-//import java.util.ArrayList;
-
 public class Pokemon {
 	//member variables
 	private String name;
@@ -10,8 +8,6 @@ public class Pokemon {
 	
 	//a count static variable that keeps the number of Pokemon created in the program.
 	static int count = 0;
-	//static list to hold all pokemons for listing
-//	private static ArrayList<Pokemon> allPokemons = new ArrayList<Pokemon>();
 	
 	//constructor
 	public Pokemon(String name, int health, String type) {
@@ -53,27 +49,5 @@ public class Pokemon {
 	public void attackPokemon(Pokemon pokemon) {
 		pokemon.setHealth(pokemon.getHealth() - 10);
 	}
-	
-//	//these are from the interface
-//	//This method creates and returns Pokemon.
-//	public Pokemon createPokemon(String name, int health, String type) {
-//		Pokemon newPokemon = new Pokemon(name, health, type);
-//		
-//		return newPokemon;
-//	}
-//	//This method returns a String with the name, health, and type of the pokemon.
-//	public String pokemonInfo(Pokemon pokemon) {
-//		String description = String.format("Name: %s, health: %d, type: %s", pokemon.name, pokemon.health, pokemon.type);
-//		return description;
-//	}
-//	//List all the pokemon names that you have in your pokedex.
-//	public void listPokemon() {
-//		for(int i = 0; i < count; i++) {
-//			System.out.println();
-//		}
-//	}
-//	
-	
-	
-	
+		
 }
